@@ -1691,21 +1691,12 @@ table.calendarmonth.calendartable {
     top: 85%;
     right: 15px;
     display: none;
-    text-align:center; 
-    font:9px; 
-    text-transform:uppercase; 
+    text-align:center;
+    font:11px/100%;
+    text-transform:uppercase;
     text-decoration:none;
-    -webkit-transition: all .3s ease 0s;
-    -moz-transition: all .3s ease 0s;
-    -o-transition: all .3s ease 0s;
-    background-color: #000;
-    background-color: rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 0 1px #fff;
-    -moz-box-shadow: 0 0 1px #fff;
-    box-shadow: 0 0 1px #fff;
-    padding: 5px 12px;
-    color: #fff;
-    
+    width:132px;
+    margin-left:-66px;
 }
 
 .back-to-top:hover{
