@@ -126,14 +126,6 @@ body.essential-colours-alternative1 {
     background: [[setting:alternativethemehovercolor1]];
 }
 
-.essential-colours-alternative1 .block_login .footer a {
-    background: [[setting:alternativethemecolor1]];
-}
-
-.essential-colours-alternative1 .block_login .footer a:hover {
-    background: [[setting:alternativethemehovercolor1]];
-}
-
 .essential-colours-alternative1 #page-site-index h2.headingblock:before {
     color: [[setting:alternativethemecolor1]];
 }

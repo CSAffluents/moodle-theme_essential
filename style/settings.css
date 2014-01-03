@@ -305,14 +305,6 @@ a#button:hover {
     background:[[setting:themehovercolor]];
 }
 
-.block_login .footer a {
-    background: [[setting:themecolor]];
-}
-
-.block_login .footer a:hover {
-    background: [[setting:themehovercolor]];
-}
-
 /* @end */
 
 /* @group Frontpage */

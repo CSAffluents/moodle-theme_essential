@@ -897,53 +897,6 @@ table#greyboxleft h2 {
     color: #fff;
 }
 
-.block_login input[type="submit"] {
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    background: #0cc719;
-    margin-right: 5px;
-    font-size: 1em;
-    text-shadow: none;
-    box-shadow: none;
-    margin-top: 10px;
-    margin-left: 0px;
-}
-
-.block_login input:hover {
-    text-decoration: none;
-    background: #339900;
-    color: #fff;
-}
-
-.block_login .footer a {
-    color: #fff;
-    padding: 3px 5px;
-    border-radius: 5px;
-    float: left;
-    margin-left: 15px;
-    font-size: 1em;
-    white-space: nowrap;
-}
-
-.block_login input[type="text"],
-.block_login input[type="password"] {
-    width: 95% !important;
-}
-
-.block_login .footer a:hover {
-    text-decoration: none;
-}
-
-.block_login .footer div {
-    margin-top: -45px;
-    margin-left: 33px;
-}
-
-.block_login .footer {
-    height: 0px;
-}
-
 /* @group Block Icons */
 
 .dir-rtl .collapsed .tree_item.branch:before { 
@@ -1325,25 +1278,6 @@ table#greyboxleft h2 {
     border: 0px none;
     float: left;
     margin-top: 3px;
-}
-    
-#page-footer .block_login .footer a,
-#page-footer .block_login .footer a:visited {
-    background: red;
-    color: #fff;
-    border-radius: 5px;
-    padding: 4px 10px;
-    font-size: 1.1em;
-    line-height: 20px;
-    float: left;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    margin-left: 10px;
-}
-    
-#page-footer .block_login .footer a:focus,
-#page-footer .block_login .footer a:hover {
-    text-decoration: none !important;
-    background-color: #666 ;
 }
     
 #page-footer .block_rss_client li:before{
