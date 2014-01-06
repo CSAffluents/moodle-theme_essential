@@ -756,8 +756,13 @@ table#greyboxleft h2 {
     background: white;
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid #E1E1E1;
+    border: medium none;
     margin-bottom: 10px;
+    padding: 6px;
+}
+
+.block .content {
+    background: #fff;
 }
 
 .block #icon {
@@ -822,12 +827,13 @@ table#greyboxleft h2 {
 .block .header .title h2,
 .block h3.main {
     font-size: 1.15em;
-    color: #888;
+    color: #fff;
     line-height: 26px;
     margin-bottom: 5px;
     text-transform: uppercase;
     font-weight: normal;
     padding: 0px;
+    text-shadow: none;
 }
 
 .block .header .title h2:before {
@@ -835,11 +841,16 @@ table#greyboxleft h2 {
     font-size: 1.65em;
     margin-right: .3em;
     content: "\f0c9";
+    color: #999 !important;
 }
 
 .block .header .title {
     border-bottom: 1px solid #EEE;
     padding-left: 0px;
+}
+
+.block .header .block_action {
+    padding: 0 4px;
 }
 
 .block.hidden .header .title h2,

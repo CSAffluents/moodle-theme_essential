@@ -114,6 +114,10 @@ body.essential-colours-alternative2 {
 	border-bottom-color:  [[setting:alternativethemecolor2]];
 }
 
+.essential-colours-alternative2 .block {
+    background: [[setting:alternativethemecolor2]];
+}
+
 .essential-colours-alternative2 .block .header .title h2:before {
     color: [[setting:alternativethemecolor2]];
 }

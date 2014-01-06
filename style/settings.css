@@ -293,6 +293,10 @@ a#button:hover {
 
 /* @group Blocks */
 
+.block {
+    background:[[setting:themecolor]];
+}
+
 .block .header .title h2:before {
     color: [[setting:themecolor]];
 }
