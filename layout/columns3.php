@@ -34,6 +34,7 @@ theme_essential_initialise_colourswitcher($PAGE);
 
 $bodyclasses = array();
 $bodyclasses[] = 'three-column';
+$bodyclasses[] = 'essential-colours-' . theme_essential_get_colours();
 if ($sideregionsmaxwidth) {
     $bodyclasses[] = 'side-regions-with-max-width';
 }
