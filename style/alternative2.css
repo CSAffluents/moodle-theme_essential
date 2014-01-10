@@ -118,7 +118,7 @@ body.essential-colours-alternative2 {
     background: [[setting:alternativethemecolor2]];
 }
 
-.essential-colours-alternative2 .block .header .title h2:before {
+.essential-colours-alternative2 #region-main .block .header .title h2:before {
     color: [[setting:alternativethemecolor2]];
 }
 

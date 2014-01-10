@@ -297,7 +297,7 @@ a#button:hover {
     background:[[setting:themecolor]];
 }
 
-.block .header .title h2:before {
+#region-main .block .header .title h2:before {
     color: [[setting:themecolor]];
 }
 

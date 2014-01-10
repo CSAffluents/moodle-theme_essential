@@ -765,6 +765,25 @@ table#greyboxleft h2 {
     background: #fff;
 }
 
+#region-main .block {
+    padding: 8px;
+    border: 1px solid #E1E1E1;
+}
+
+#region-main .block {
+    background: none !important;
+}
+
+#region-main .block .content {
+    background: transparent;
+}
+
+#region-main .block .header .title h2,
+#region-main .block h3.main {
+    color: #888;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
 .block #icon {
     margin-right: 5px;
     color: #999;
@@ -841,7 +860,7 @@ table#greyboxleft h2 {
     font-size: 1.65em;
     margin-right: .3em;
     content: "\f0c9";
-    color: #999 !important;
+    color: #999;
 }
 
 .block .header .title {
