@@ -270,8 +270,7 @@
             $title = get_string('turneditingon');
             $icon = 'fa-edit';
         }
-        return html_writer::tag('a', html_writer::start_tag('i', array('class' => $icon.' fa fa-fw')).
-               html_writer::end_tag('i'), array('href' => $url, 'class' => 'btn '.$btn, 'title' => $title));
+        return html_writer::tag('a', $title, array('href' => $url, 'class' => 'btn '.$btn, 'title' => $title));
     }
 }
 
