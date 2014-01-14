@@ -99,7 +99,7 @@ h2.main,
 a.logo {
     display: block;
     float: left;
-    height: 75px;
+    height: 100px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -765,15 +765,14 @@ table#greyboxleft h2 {
     background: #fff;
 }
 
+#page-footer .block,
 #region-main .block {
     padding: 8px;
     border: 1px solid #E1E1E1;
-}
-
-#region-main .block {
     background: none !important;
 }
 
+#page-footer .block .content,
 #region-main .block .content {
     background: transparent;
 }
@@ -852,7 +851,7 @@ table#greyboxleft h2 {
     text-transform: uppercase;
     font-weight: normal;
     padding: 0px;
-    text-shadow: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
 }
 
 .block .header .title h2:before {
@@ -1072,6 +1071,9 @@ table#greyboxleft h2 {
 }
 
 
+.block_settings .block_tree .tree_item {
+    margin-left: -21px;
+}
 
 /* @end */
 
@@ -1668,36 +1670,22 @@ table.calendarmonth.calendartable {
     text-decoration: none;
 }
 
-.back-to-top a,
-.back-to-top a:visited {
-	color: #fff !important;
+/* Fix link color tablet and below only. */
+@media screen and (max-width: 979px) {
+    .nav-collapse .nav > li > a,
+    .nav-collapse .dropdown-menu a {
+        color: #aaa;
+    }
 }
 
-/* @end */
-
-/* @group RTL Fixes */
-
-.dir-rtl .block .footer {
-    float: right;
-    text-align: right;
-}
-.dir-rtl .block_login input[type="submit"],
-.dir-rtl .block_login .footer a {
-    float: right;
-}
-.dir-rtl .block .header .title h2:before {
-    margin-left: 0.3em;
+/* Fix link focus color desktop only. */
+@media screen and (min-width: 980px) {
+    .navbar .nav > li > a:focus {
+        color: #ccc;
+    }
 }
 
-.dir-rtl .block #icon {
-    margin-left: 5px;
-}
-/* @navigation */
-.dir-rlt .tree_item.branch:before {
-    margin-left: 5px;
-}
 
-/* @end */
 @media screen and (min-width: 960px) {
     .two-column.side-regions-with-max-width #block-region-side-pre {
         width: 285px;
