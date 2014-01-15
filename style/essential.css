@@ -1664,6 +1664,7 @@ table.calendarmonth.calendartable {
     text-decoration:none;
     width:132px;
     margin-left:-66px;
+    text-shadow: 0 0 4px #fff;
 }
 
 .back-to-top:hover{
@@ -1673,9 +1674,18 @@ table.calendarmonth.calendartable {
 /* Fix link color tablet and below only. */
 @media screen and (max-width: 979px) {
     .nav-collapse .nav > li > a,
-    .nav-collapse .dropdown-menu a {
+    .nav-collapse .dropdown-menu a,
+    .dropdown-menu > li > a,
+    .dropdown-menu > li > a:visited{
         color: #aaa;
     }
+    .nav-collapse .nav > li > a:hover,
+    .nav-collapse .nav > li > a:focus,
+    .nav-collapse .dropdown-menu a:hover,
+    .nav-collapse .dropdown-menu a:focus {
+    background-color: #F2F2F2 !important;
+    background-image: none !important;
+  }
 }
 
 /* Fix link focus color desktop only. */

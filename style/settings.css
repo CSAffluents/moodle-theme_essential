@@ -19,7 +19,7 @@
 
 body{
     border-top:3px solid [[setting:themecolor]];
-    background: white url([[setting:pagebackground]]) repeat;
+    background: #f6f6f6 url([[setting:pagebackground]]) repeat;
     font-size: [[setting:bodysize]];
     font-weight: [[setting:bodyweight]];
 }
@@ -57,7 +57,7 @@ a:hover{
 /* @group Header */
 
 #page-header {
-    background: url([[pix:theme|bg/header]]) repeat;
+    background: #fff url([[pix:theme|bg/header]]) repeat-x 0 bottom;
 }
 
 a.logo {
