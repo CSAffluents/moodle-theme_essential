@@ -1658,18 +1658,57 @@ table.calendarmonth.calendartable {
     top: 85%;
     right: 15px;
     display: none;
-    text-align:center;
-    font:11px/100%;
-    text-transform:uppercase;
+    text-align:center; 
+    font:9px; 
+    text-transform:uppercase; 
     text-decoration:none;
-    width:132px;
-    margin-left:-66px;
-    text-shadow: 0 0 4px #fff;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 1px #fff;
+    -moz-box-shadow: 0 0 1px #fff;
+    box-shadow: 0 0 1px #fff;
+    padding: 5px 12px;
+    color: #fff;
+    
 }
 
 .back-to-top:hover{
     text-decoration: none;
 }
+
+.back-to-top a,
+.back-to-top a:visited {
+	color: #fff !important;
+}
+
+/* @end */
+
+/* @group RTL Fixes */
+
+.dir-rtl .block .footer {
+    float: right;
+    text-align: right;
+}
+.dir-rtl .block_login input[type="submit"],
+.dir-rtl .block_login .footer a {
+    float: right;
+}
+.dir-rtl .block .header .title h2:before {
+    margin-left: 0.3em;
+}
+
+.dir-rtl .block #icon {
+    margin-left: 5px;
+}
+/* @navigation */
+.dir-rlt .tree_item.branch:before {
+    margin-left: 5px;
+}
+
+/* @end */
 
 /* Fix link color tablet and below only. */
 @media screen and (max-width: 979px) {
