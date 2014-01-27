@@ -1710,6 +1710,35 @@ table.calendarmonth.calendartable {
 
 /* @end */
 
+/* Fix colors-picker. */
+.essential-colors-picker > li > a {
+    display: inline-block;
+    font-size: 1.4em;
+    padding: 8px 12px;
+}
+
+.essential-colors-picker > li {
+    display: inline-block;
+}
+
+.essential-colors-picker > li > a:hover,
+.essential-colors-picker > li > a:focus {
+    background: #fff !important;
+}
+
+.essential-colors-picker > li > a > .fa {
+    margin: 0;
+    width: 16px;
+    text-shadow:  -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+/* Fix padding for desktop screen. */
+@media screen and (min-width: 804px) {
+    .navbar-inner .container-fluid {
+        padding:0;
+    }
+}
+
 /* Fix link color tablet and below only. */
 @media screen and (max-width: 979px) {
     .nav-collapse .nav > li > a,

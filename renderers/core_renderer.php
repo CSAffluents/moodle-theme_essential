@@ -25,8 +25,10 @@
  */
  
  class theme_essential_core_renderer extends theme_bootstrapbase_core_renderer {
+ 
+    const COLORS_PICKER = 'essential-colors-picker';
  	
- 	/*
+    /*
      * This renders a notification message.
      * Uses bootstrap compatible html.
      */
@@ -90,7 +92,37 @@
     }
 		
     protected function render_custom_menu(custom_menu $menu) {
-    	/*
+
+        /*
+         * This code adds the Theme colors selector to the custommenu.
+         */
+        if (isloggedin() && !isguestuser()) {
+            $alternativethemes = array();
+            foreach (range(1, 3) as $alternativethemenumber) {
+                if (!empty($this->page->theme->settings->{'enablealternativethemecolors' . $alternativethemenumber})) {
+                    $alternativethemes[] = $alternativethemenumber;
+                }
+            }
+            if (!empty($alternativethemes)) {
+                $branchtitle = get_string('themecolors', 'theme_essential');
+                $branchlabel = '<i class="fa fa-th-large"></i>' . $branchtitle;
+                $branchurl   = new moodle_url($this->page->url, array(self::COLORS_PICKER => 1));
+                $branchsort  = 11000;
+                $branch = $menu->add($branchlabel, $branchurl, $branchtitle, $branchsort);
+                $defaultthemecolorslabel = get_string('defaultcolors', 'theme_essential');
+
+                // Add this to add class the colors-picker links.
+                $branch->add('<i class="fa fa-square colours-default"></i>',
+                        new moodle_url($this->page->url, array('essentialcolours' => 'default')), $defaultthemecolorslabel);
+                foreach ($alternativethemes as $alternativethemenumber) {
+                    $alternativethemeslabel = get_string('alternativecolors', 'theme_essential', $alternativethemenumber);
+                    $branch->add('<i class="fa fa-square colours-alternative' .  $alternativethemenumber . '"></i>',
+                            new moodle_url($this->page->url, array('essentialcolours' => 'alternative' . $alternativethemenumber)), $alternativethemeslabel);
+                }
+            }
+        }
+
+        /*
     	* This code replaces adds the current enrolled
     	* courses to the custommenu.
     	*/
@@ -144,36 +176,26 @@
  			$branch->add('<em><i class="fa fa-file"></i>'.get_string('privatefiles', 'block_private_files').'</em>',new moodle_url('/user/files.php'),get_string('privatefiles', 'block_private_files'));
  			$branch->add('<em><i class="fa fa-sign-out"></i>'.get_string('logout').'</em>',new moodle_url('/login/logout.php'),get_string('logout'));    
         }
-        
-        /*
-         * This code adds the Theme colors selector to the custommenu.
-         */
-        if (isloggedin() && !isguestuser()) {
-            $alternativethemes = array();
-            foreach (range(1, 3) as $alternativethemenumber) {
-                if (!empty($this->page->theme->settings->{'enablealternativethemecolors' . $alternativethemenumber})) {
-                    $alternativethemes[] = $alternativethemenumber;
-                }
-            }
-            if (!empty($alternativethemes)) {
-                $branchtitle = get_string('themecolors', 'theme_essential');
-                $branchlabel = '<i class="fa fa-th-large"></i>' . $branchtitle;
-                $branchurl   = new moodle_url('/my/index.php');
-                $branchsort  = 11000;
-                $branch = $menu->add($branchlabel, $branchurl, $branchtitle, $branchsort);
-                
-                $defaultthemecolorslabel = get_string('defaultcolors', 'theme_essential');
-                $branch->add('<i class="fa fa-square colours-default"></i>' . $defaultthemecolorslabel,
-                        new moodle_url($this->page->url, array('essentialcolours' => 'default')), $defaultthemecolorslabel);
-                foreach ($alternativethemes as $alternativethemenumber) {
-                    $alternativethemeslabel = get_string('alternativecolors', 'theme_essential', $alternativethemenumber);
-                    $branch->add('<i class="fa fa-square colours-alternative' .  $alternativethemenumber . '"></i>' . $alternativethemeslabel,
-                            new moodle_url($this->page->url, array('essentialcolours' => 'alternative' . $alternativethemenumber)), $alternativethemeslabel);
-                }
-            }
-        }
  
         return parent::render_custom_menu($menu);
+    }
+
+    /*
+     * This code renders the custom menu items for the
+     * bootstrap dropdown menu.
+     */
+    protected function render_custom_menu_item(custom_menu_item $menunode, $level = 0) {
+
+        $custommenuitem = parent::render_custom_menu_item($menunode, $level);
+
+        if ($menunode->get_url() !== null && $menunode->has_children()) {
+            $url = $menunode->get_url();
+            if (array_key_exists(self::COLORS_PICKER, $url->params())) {
+                $custommenuitem = preg_replace('/<ul class="dropdown-menu">/', '<ul class="dropdown-menu ' . self::COLORS_PICKER .  '">', $custommenuitem, 1);
+            }
+        }
+
+        return $custommenuitem;
     }
     
  	/*
