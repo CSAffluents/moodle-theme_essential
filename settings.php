@@ -28,7 +28,7 @@ $settings = null;
 defined('MOODLE_INTERNAL') || die;
 
 
-	$ADMIN->add('themes', new admin_category('theme_essentialsummer', 'Essential for summer'));
+	$ADMIN->add('themes', new admin_category('theme_essentialsummer', get_string('pluginname', 'theme_essentialsummer')));
 
 	// "geneicsettings" settingpage
 	$temp = new admin_settingpage('theme_essentialsummer_generic',  get_string('geneicsettings', 'theme_essentialsummer'));
