@@ -1718,7 +1718,8 @@ table.calendarmonth.calendartable {
 }
 
 .essential-colors-picker > li {
-    display: inline-block;
+    display: inline;
+    white-space: nowrap;
 }
 
 .essential-colors-picker > li > a:hover,
