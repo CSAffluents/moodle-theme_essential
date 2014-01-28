@@ -19,7 +19,7 @@
  * Moodle's new Bootstrap theme engine
  *
  *
- * @package   theme_essential
+ * @package   theme_essentialsummer
  * @copyright 2013 Julian Ridden
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -56,7 +56,7 @@ if (!empty($_SERVER['HTTP_USER_AGENT'])) {
 <?php
 // Check if IE7 browser and display message
 if (strpos($checkuseragent, 'MSIE 7')) {
-	echo get_string('ie7message', 'theme_essential');
+	echo get_string('ie7message', 'theme_essentialsummer');
 }?>
 
 <?php
@@ -113,7 +113,7 @@ if (strpos($checkuseragent, 'MSIE 8') || strpos($checkuseragent, 'MSIE 7')) {?>
         if ($hassocialnetworks) {
         ?>
         <div class="span3 pull-right">
-        <p id="socialheading"><?php echo get_string('socialnetworks','theme_essential')?></p>
+        <p id="socialheading"><?php echo get_string('socialnetworks','theme_essentialsummer')?></p>
             <ul class="socials unstyled">
                 <?php if ($hasgoogleplus) { ?>
                 <li><a href="<?php echo $hasgoogleplus; ?>" class="socialicon googleplus"><i class="fa fa-google-plus fa-inverse"></i></a></li>
@@ -157,7 +157,7 @@ if (strpos($checkuseragent, 'MSIE 8') || strpos($checkuseragent, 'MSIE 7')) {?>
         if ($hasmobileapps) {
         ?>
         <div class="span2 pull-right">
-        <p id="socialheading"><?php echo get_string('mobileappsheading','theme_essential')?></p>
+        <p id="socialheading"><?php echo get_string('mobileappsheading','theme_essentialsummer')?></p>
             <ul class="socials unstyled">
                 <?php if ($hasios) { ?>
                 <li><a href="<?php echo $hasios; ?>" class="socialicon ios"><i class="fa fa-apple fa-inverse"></i></a></li>

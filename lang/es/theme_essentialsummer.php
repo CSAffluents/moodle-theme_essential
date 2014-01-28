@@ -19,14 +19,14 @@
  * Moodle's new Bootstrap theme engine
  *
  *
- * @package   theme_essential
+ * @package   theme_essentialsummer
  * @copyright 2013 Julian Ridden
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 /* Core */
-$string['configtitle'] = 'Essential';
-$string['pluginname'] = 'Essential';
+$string['configtitle'] = 'Essential for summer';
+$string['pluginname'] = 'Essential for summer';
 $string['choosereadme'] = '
 <div class="clearfix">
 <div class="well">
@@ -34,8 +34,8 @@ $string['choosereadme'] = '
 <p><img class=img-polaroid src="clean/pix/screenshot.jpg" /></p>
 </div>
 <div class="well">
-<h3>Acerca de Essential</h3>
-<p>Essential es un tema basado en Moodle bootstrap que hereda sus estilos y reproductores de sus temas padre.</p>
+<h3>Acerca de Essential for summer</h3>
+<p>Essential for summer es un tema basado en Moodle bootstrap que hereda sus estilos y reproductores de sus temas padre.</p>
 <h3>Padres</h3>
 <p>Este tema esta basado en el BootstrapBase theme, el cual fue creado para Moodle 2.5, con la ayuda de:<br>
 Stuart Lamour, Mark Aberdour, Paul Hibbitts, Mary Evans.</p>

@@ -19,7 +19,7 @@
  * Moodle's new Bootstrap theme engine
  *
  *
- * @package   theme_essential
+ * @package   theme_essentialsummer
  * @copyright 2013 Julian Ridden
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -30,7 +30,7 @@ $plugin->version   = 2014012000;        // YYYYMMDD.
 $plugin->maturity = MATURITY_STABLE;             // this version's maturity level.
 $plugin->release = '2.7 (Build: 20140120)';
 $plugin->requires  = 2013111800;        // Requires Moodle 2.6.
-$plugin->component = 'theme_essential';
+$plugin->component = 'theme_essentialsummer';
 $plugin->dependencies = array(
     'theme_bootstrapbase'  => 2013050100,
 );

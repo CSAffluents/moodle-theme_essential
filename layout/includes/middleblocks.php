@@ -9,8 +9,8 @@ $homer = 'home-right';
 
 <div class="row-fluid" id="middle-blocks">
     <?php
-            		echo $OUTPUT->essentialblocks($homel, 'span4');
-            		echo $OUTPUT-> essentialblocks($homem, 'span4');
-            		echo $OUTPUT-> essentialblocks($homer, 'span4');
+            		echo $OUTPUT->essentialsummerblocks($homel, 'span4');
+            		echo $OUTPUT-> essentialsummerblocks($homem, 'span4');
+            		echo $OUTPUT-> essentialsummerblocks($homer, 'span4');
 		?>
 </div>

@@ -23,11 +23,11 @@
  * If you are modifying this file please be extremely careful, one wrong API call and you could end up
  * breaking installation or upgrade unwittingly.
  */
-theme_essential_check_colours_switch();
-theme_essential_initialise_colourswitcher($PAGE);
+theme_essentialsummer_check_colours_switch();
+theme_essentialsummer_initialise_colourswitcher($PAGE);
 
 $bodyclasses = array();
-$bodyclasses[] = 'essential-colours-' . theme_essential_get_colours();
+$bodyclasses[] = 'essentialsummer-colours-' . theme_essentialsummer_get_colours();
  
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>

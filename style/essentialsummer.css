@@ -1,6 +1,6 @@
 /*
  * @author    Julian Ridden
- * @package   theme_essential
+ * @package   theme_essentialsummer
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
  
@@ -1711,23 +1711,23 @@ table.calendarmonth.calendartable {
 /* @end */
 
 /* Fix colors-picker. */
-.essential-colors-picker > li > a {
+.essentialsummer-colors-picker > li > a {
     display: inline-block;
     font-size: 1.4em;
     padding: 8px 12px;
 }
 
-.essential-colors-picker > li {
+.essentialsummer-colors-picker > li {
     display: inline;
     white-space: nowrap;
 }
 
-.essential-colors-picker > li > a:hover,
-.essential-colors-picker > li > a:focus {
+.essentialsummer-colors-picker > li > a:hover,
+.essentialsummer-colors-picker > li > a:focus {
     background: #fff !important;
 }
 
-.essential-colors-picker > li > a > .fa {
+.essentialsummer-colors-picker > li > a > .fa {
     margin: 0;
     width: 16px;
     text-shadow:  -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;

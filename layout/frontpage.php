@@ -15,10 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * The Essential theme is built upon the Bootstrapbase theme.
+ * The Essential for summer theme is built upon the Bootstrapbase theme.
  *
  * @package    theme
- * @subpackage Essential
+ * @subpackage Essential for summer
  * @author     Julian (@moodleman) Ridden
  * @author     Based on code originally written by G J Bernard, Mary Evans, Bas Brands, Stuart Lamour and David Scotson.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -119,12 +119,12 @@ if ($hasslide4url) {
     $slide4url = $PAGE->theme->settings->slide4url;
 }
 
-theme_essential_check_colours_switch();
-theme_essential_initialise_colourswitcher($PAGE);
+theme_essentialsummer_check_colours_switch();
+theme_essentialsummer_initialise_colourswitcher($PAGE);
 
 $bodyclasses = array();
 $bodyclasses[] = 'two-column';
-$bodyclasses[] = 'essential-colours-' . theme_essential_get_colours();
+$bodyclasses[] = 'essentialsummer-colours-' . theme_essentialsummer_get_colours();
 if ($sideregionsmaxwidth) {
     $bodyclasses[] = 'side-regions-with-max-width';
 }
@@ -138,7 +138,7 @@ echo $OUTPUT->doctype() ?>
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <noscript>
-			<link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot;?>/theme/essential/style/nojs.css" />
+			<link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot;?>/theme/essentialsummer/style/nojs.css" />
 	</noscript>
     <!-- Google web fonts -->
     <?php require_once(dirname(__FILE__).'/includes/fonts.php'); ?>
@@ -307,9 +307,9 @@ echo $OUTPUT->doctype() ?>
     <?php if (is_siteadmin()) { ?>
 	<div class="hidden-blocks">
     	<div class="row-fluid">
-        	<h4><?php echo get_string('visibleadminonly', 'theme_essential') ?></h4>
+        	<h4><?php echo get_string('visibleadminonly', 'theme_essentialsummer') ?></h4>
             <?php
-                echo $OUTPUT->essentialblocks('hidden-dock');
+                echo $OUTPUT->essentialsummerblocks('hidden-dock');
             ?>
     	</div>
 	</div>

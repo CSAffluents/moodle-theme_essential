@@ -15,10 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * The Essential theme is built upon the Bootstrapbase theme.
+ * The Essential for summer theme is built upon the Bootstrapbase theme.
  *
  * @package    theme
- * @subpackage Essential
+ * @subpackage Essential for summer
  * @author     Julian (@moodleman) Ridden
  * @author     Based on code originally written by G J Bernard, Mary Evans, Bas Brands, Stuart Lamour and David Scotson.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -29,12 +29,12 @@ $hasboringlayout = (empty($PAGE->theme->settings->layout)) ? false : $PAGE->them
 $hasanalytics = (empty($PAGE->theme->settings->useanalytics)) ? false : $PAGE->theme->settings->useanalytics;
 $sideregionsmaxwidth = (!empty($PAGE->theme->settings->sideregionsmaxwidth));
 
-theme_essential_check_colours_switch();
-theme_essential_initialise_colourswitcher($PAGE);
+theme_essentialsummer_check_colours_switch();
+theme_essentialsummer_initialise_colourswitcher($PAGE);
 
 $bodyclasses = array();
 $bodyclasses[] = 'three-column';
-$bodyclasses[] = 'essential-colours-' . theme_essential_get_colours();
+$bodyclasses[] = 'essentialsummer-colours-' . theme_essentialsummer_get_colours();
 if ($sideregionsmaxwidth) {
     $bodyclasses[] = 'side-regions-with-max-width';
 }
@@ -149,6 +149,6 @@ jQuery(document).ready(function() {
     })
 });
 </script>
-<a href="#top" class="back-to-top" title="<?php print_string('backtotop', 'theme_essential'); ?>"><i class="fa fa-angle-up "></i></a>
+<a href="#top" class="back-to-top" title="<?php print_string('backtotop', 'theme_essentialsummer'); ?>"><i class="fa fa-angle-up "></i></a>
 </body>
 </html>

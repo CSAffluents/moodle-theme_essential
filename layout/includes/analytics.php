@@ -16,10 +16,10 @@
 
 /**
  * This code was written and released by Bas Brands and is added as a
- * value add to the essential theme.
+ * value add to the essentialsummer theme.
  *
  *
- * @package   theme_essential
+ * @package   theme_essentialsummer
  * @copyright 2013 Julian Ridden
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
