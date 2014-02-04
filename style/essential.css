@@ -1732,6 +1732,8 @@ table.calendarmonth.calendartable {
     text-shadow:  -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
+.dropdown-menu.essentialsummer-colors-picker {min-width:inherit}
+
 /* Fix padding for desktop screen. */
 @media screen and (min-width: 804px) {
     .navbar-inner .container-fluid {
@@ -1754,6 +1756,11 @@ table.calendarmonth.calendartable {
     background-color: #F2F2F2 !important;
     background-image: none !important;
   }
+}
+
+/* Hide profile picture phone screen. */
+@media screen and (max-width: 768px) {
+    #profilepic{display:none}
 }
 
 /* Fix link focus color desktop only. */
