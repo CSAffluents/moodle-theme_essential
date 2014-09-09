@@ -1797,4 +1797,9 @@ table.calendarmonth.calendartable {
         width: -webkit-calc(100% - 2.5641% - 285px);
         width: calc(100% - 2.5641% - 285px);
     }
+
+    .three-column.side-regions-with-max-width.empty-region-side-post.used-region-side-pre #region-bs-main-and-pre,
+    .three-column.side-regions-with-max-width.empty-region-side-pre.used-region-side-post #region-bs-main-and-post {
+        width: 100%;
+    }
 }
